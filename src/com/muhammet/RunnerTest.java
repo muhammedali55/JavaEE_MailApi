@@ -9,8 +9,15 @@ public class RunnerTest {
 	         "vektoreljavaali";// change accordingly
 	      String password = "vektorel2004";// change accordingly
 
+	      
+	      
+	      
 	      MailIslemleri mail = new MailIslemleri(null, null, null, null);
 	      //Call method fetch
-	      mail.mailAlma(host, mailStoreType, username, password);
+	    
+	      mail.mailGonder(username, password, "muhammedali55@gmail.com", "Java Mail APÝ Deneme", 
+	    		  "Ýçerik olarak java mail api denemesi için oluþturulmuþtur.");
+	      
+	      //mail.mailAlma(host, mailStoreType, username, password);
 	}
 }

@@ -69,7 +69,7 @@ public class MailIslemleri {
 		try {
 			Message message = new MimeMessage(session);
 			message.setFrom(new InternetAddress(email));
-			message.setRecipients(Message.RecipientType.TO, InternetAddress.parse(username+"@gmail.com"));
+			message.setRecipients(Message.RecipientType.TO, InternetAddress.parse(email));
 			message.setSubject(baslik);
 			message.setText(icerik);
 			Transport.send(message);
